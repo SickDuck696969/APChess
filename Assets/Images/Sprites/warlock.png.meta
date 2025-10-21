@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4944c8fe0184f044fb221ea3ae8c40a9
+guid: 48d1a9c70a64c1b4b98498f1579fea85
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2759152716061183957
-    second: ninja_0
+      213: -1301815183739471747
+    second: warlock_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,12 +126,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ninja_0
+      name: warlock_0
       rect:
         serializedVersion: 2
-        x: 15
+        x: 0
         y: 0
-        width: 1009
+        width: 1024
         height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b207e1e293585b9d0800000000000000
-      internalID: -2759152716061183957
+      spriteID: d78bff9dcf50fede0800000000000000
+      internalID: -1301815183739471747
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ninja_0: -2759152716061183957
+      warlock_0: -1301815183739471747
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
