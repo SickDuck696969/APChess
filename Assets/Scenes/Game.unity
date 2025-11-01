@@ -539,8 +539,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 435, y: 168.86}
-  m_SizeDelta: {x: -918.34, y: -415.88}
+  m_AnchoredPosition: {x: 444, y: 189.74}
+  m_SizeDelta: {x: -918.34, y: -409.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &227651021
 MonoBehaviour:
@@ -689,7 +689,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 60.79, y: -111.81}
+  m_AnchoredPosition: {x: 43, y: -84}
   m_SizeDelta: {x: -121.58, y: -223.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &335061857
@@ -1233,7 +1233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -60.79001, y: -17.369995}
+  m_AnchoredPosition: {x: -39, y: 13}
   m_SizeDelta: {x: -121.58, y: -223.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &611925654
@@ -1663,6 +1663,7 @@ GameObject:
   - component: {fileID: 1325968729}
   - component: {fileID: 1325968730}
   - component: {fileID: 1325968731}
+  - component: {fileID: 1325968732}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1816,6 +1817,34 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_MaxRayIntersections: 0
+--- !u!114 &1325968732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325968725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa4d68b7b7de2642a2b96bf7874adc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FormationManager
+  boardGenerator: {fileID: 1813383893}
+  unitPrefab: {fileID: 6651472146556411492, guid: 480af9e8e99bf6442bb13ad907bcd293, type: 3}
+  playerUnits:
+  - {fileID: 11400000, guid: a82bbac4139292c43b0bfab867b64871, type: 2}
+  - {fileID: 11400000, guid: 7741cfef5c9fa4e49951a722e36686f5, type: 2}
+  - {fileID: 11400000, guid: a82bbac4139292c43b0bfab867b64871, type: 2}
+  - {fileID: 11400000, guid: 7741cfef5c9fa4e49951a722e36686f5, type: 2}
+  - {fileID: 11400000, guid: a82bbac4139292c43b0bfab867b64871, type: 2}
+  - {fileID: 11400000, guid: 24d5c65553687a3498b157b4d5830db6, type: 2}
+  opponentUnits:
+  - {fileID: 11400000, guid: a82bbac4139292c43b0bfab867b64871, type: 2}
+  - {fileID: 11400000, guid: 7741cfef5c9fa4e49951a722e36686f5, type: 2}
+  - {fileID: 11400000, guid: 7741cfef5c9fa4e49951a722e36686f5, type: 2}
+  - {fileID: 11400000, guid: a82bbac4139292c43b0bfab867b64871, type: 2}
+  - {fileID: 11400000, guid: a82bbac4139292c43b0bfab867b64871, type: 2}
+  - {fileID: 11400000, guid: e006c6863fc1aee4e9ef4852598923be, type: 2}
 --- !u!1 &1379561239
 GameObject:
   m_ObjectHideFlags: 0

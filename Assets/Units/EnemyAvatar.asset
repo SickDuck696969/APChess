@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd83160cbe120f7498f5155b3e1c9483, type: 3}
-  m_Name: Ninja
+  m_Name: EnemyAvatar
   m_EditorClassIdentifier: Assembly-CSharp::Unit
-  unitID: 4
-  unitName: Ninja
-  unitSprite: {fileID: 21300000, guid: 4944c8fe0184f044fb221ea3ae8c40a9, type: 3}
+  unitID: 36
+  unitName: EAvatar
+  unitSprite: {fileID: 21300000, guid: 75006b7ee467b864e9ceffb9e4b46c28, type: 3}
   unitDescription: 
-  cost: 1
+  cost: 0
   isOwned: 0
