@@ -70,6 +70,7 @@ public class BoardGenerator : MonoBehaviour
         }
 
         CleanupBoard();
+transform.position = new Vector3(transform.position.x, transform.position.y, 0f); // ✅ keep board at z=0
 
         float boardWidth = columns * tileSize.x;
         float boardHeight = rows * tileSize.y;
@@ -95,12 +96,16 @@ public class BoardGenerator : MonoBehaviour
                 Vector3 pos = new Vector3(
                     bottomLeft.x + (x + 0.5f) * tileSize.x,
                     bottomLeft.y + (y + 0.5f) * tileSize.y,
-                    0f
+                    0f // ✅ ensure tiles spawn at Z = 0
                 );
 
                 GameObject tile = Instantiate(tilePrefab, pos, Quaternion.identity, transform);
-                tile.name = $"Tile_{x}_{y}";
-                tile.transform.localScale = tileSize;
+tile.name = $"Tile_{x}_{y}";
+tile.transform.localScale = tileSize;
+
+// 🔹 Force absolute world and local Z = 0
+tile.transform.position = new Vector3(tile.transform.position.x, tile.transform.position.y, 0f);
+tile.transform.localPosition = new Vector3(tile.transform.localPosition.x, tile.transform.localPosition.y, 0f);
 
                 var sr = tile.GetComponent<SpriteRenderer>();
                 if (sr != null)
@@ -148,6 +153,17 @@ public class BoardGenerator : MonoBehaviour
             lr.positionCount = 4;
             lr.SetPositions(corners);
         }
+
+        // 🔹 Enforce all tile Z = 0 (prevents them from overlapping units)
+        foreach (Transform child in transform)
+        {
+            if (child.name.StartsWith("Tile_"))
+            {
+                Vector3 p = child.position;
+                p.z = 0f;
+                child.position = p;
+            }
+        }
     }
 
     private void AddOutline(GameObject tile, float thickness, Color color, int sortingOrder)
@@ -192,4 +208,5 @@ public class BoardGenerator : MonoBehaviour
         sr.size = targetSize;
         sr.material = new Material(Shader.Find("Sprites/Default"));
     }
+    
 }

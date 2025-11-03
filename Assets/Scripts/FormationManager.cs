@@ -70,18 +70,41 @@ public class FormationManager : MonoBehaviour
     }
 
     private void SpawnUnit(Unit data, Vector3 pos, bool isPlayer)
+{
+    if (unitPrefab == null || data == null) return;
+
+    GameObject obj = Instantiate(unitPrefab, pos, Quaternion.identity);
+    obj.transform.position = new Vector3(pos.x, pos.y, -1f); // ensure in front of tiles
+    obj.name = data.unitName;
+
+    var display = obj.GetComponent<UnitDisplay>();
+    if (display != null)
     {
-        if (unitPrefab == null || data == null) return;
+        display.SetData(data, isPlayer);
+    }
 
-        GameObject obj = Instantiate(unitPrefab, pos, Quaternion.identity);
-        obj.name = data.unitName;
+    // 🔹 Find the nearest tile and mark it as occupied
+    var tile = FindClosestTile(pos);
+    if (tile != null)
+        tile.occupyingUnit = display;
+}
 
-        var display = obj.GetComponent<UnitDisplay>();
-        if (display != null)
+private Tile FindClosestTile(Vector3 unitPos)
+{
+    float minDist = float.MaxValue;
+    Tile closest = null;
+    foreach (var tile in FindObjectsByType<Tile>(FindObjectsSortMode.None))
+    {
+        float dist = Vector3.Distance(tile.transform.position, unitPos);
+        if (dist < minDist)
         {
-            display.SetData(data, isPlayer);
+            minDist = dist;
+            closest = tile;
         }
     }
+    return closest;
+}
+
     void Start()
 {
     GenerateFormation();
