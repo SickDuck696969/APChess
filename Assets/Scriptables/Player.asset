@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e490d553adda88646aef84bc89353fc2, type: 3}
+  m_Name: Player
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  data:
+    user_id: 2d8a614d-e9b5-4001-b7e1-880a2d638394
+    username: HolyCleric
+    rating: 1400
+    rankpoint: 1000
+    email: holycleric@demo.com
+    password: pass123
+    bday: 
+    createwhen: 2025-12-26T23:18:51.800624
+    History: 
+    profilePicBase64: 3
+    fragments: 1000000
+    gems: 1800
+    virgin: 0
+    inventoryid: 
+    admin: 0
+  pColor: {r: 0.22352941, g: 0.69803923, b: 1, a: 1}
+  ip: 192.168.251.101
+  Mat: Grass
+  gems: 0
+  fragments: 0
+  Decks:
+  - deckid: 17
+    maindeck: 1
+    mat:
+      id: 21000932
+      name: 
+      mat: []
+      deck: {fileID: 0}
+      sprite: {fileID: 0}
+      tier: 1
+      hexcolor: 
+      desc: 
+    name: bootycheekdeck
+  ava: {fileID: 21300000, guid: f5b7afe6acc8a2d41b1137369a58b787, type: 3}

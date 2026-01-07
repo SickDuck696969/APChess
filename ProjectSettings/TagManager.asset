@@ -5,16 +5,30 @@ TagManager:
   serializedVersion: 3
   tags:
   - Tile
+  - playmat
+  - protagmat
+  - antagmat
+  - infocard
+  - enemy
+  - mine
+  - status effect
+  - protag
+  - antag
+  - deck
+  - lobby
+  - row
+  - joincode
+  - timer
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Border
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Border
+  - Background
+  - Playmat
   - 
   - 
   - 
@@ -41,6 +55,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: border
+    uniqueID: 2339761829
+    locked: 0
+  - name: background
+    uniqueID: 1838641019
+    locked: 0
+  - name: Playmat
+    uniqueID: 2935290223
     locked: 0
   m_RenderingLayers:
   - Default

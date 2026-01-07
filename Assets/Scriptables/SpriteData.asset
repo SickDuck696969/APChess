@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570a68e553f2d884d82fad3a41598e10, type: 3}
+  m_Name: SpriteData
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteData
+  spdt:
+  - id: 214
+    sprites:
+    - {fileID: 2262307474869743876, guid: 53007a11c7689b54c8920fd19ca45f7d, type: 3}
+    - {fileID: -8628843087649160597, guid: 53007a11c7689b54c8920fd19ca45f7d, type: 3}
+    variant: Choco-Slinger
+    tier: 1
+    hexcolor: 884400
+  - id: 9
+    sprites:
+    - {fileID: 61506194941554554, guid: 6510eea298820aa4893a69123eefe36a, type: 3}
+    variant: Shinobi Verd
+    tier: 1
+    hexcolor: 06FF00
+  - id: 64
+    sprites:
+    - {fileID: 7694014812932834686, guid: 1824c0eaaafb1b74096a46f2e40ca764, type: 3}
+    - {fileID: 6731791565155783152, guid: 1824c0eaaafb1b74096a46f2e40ca764, type: 3}
+    variant: Hocus Sister
+    tier: 1
+    hexcolor: C6FF00
+  - id: 64
+    sprites:
+    - {fileID: 4013205376322725647, guid: 5c4e2635adb2bfd49a3a55bb216de937, type: 3}
+    - {fileID: -6760132672042378988, guid: 5c4e2635adb2bfd49a3a55bb216de937, type: 3}
+    variant: Strawberry Sister
+    tier: 2
+    hexcolor: FF0010
+  - id: 214
+    sprites:
+    - {fileID: -3414933714669718084, guid: 3c364fedcc603aa46a94866c1f3dcf02, type: 3}
+    - {fileID: 995276442795389386, guid: 3c364fedcc603aa46a94866c1f3dcf02, type: 3}
+    variant: Chocold-Slinger
+    tier: 3
+    hexcolor: 3D1B2F
+  - id: 214
+    sprites:
+    - {fileID: 4278136423740600300, guid: 8c1daeeeead5b604dab6258692d2a20c, type: 3}
+    - {fileID: -8995786846819530678, guid: 8c1daeeeead5b604dab6258692d2a20c, type: 3}
+    variant: Ruby Choco-Slinger
+    tier: 2
+    hexcolor: FF6EB9
+  - id: 6779
+    sprites:
+    - {fileID: -845045197500901298, guid: c7d6210fee095834aa8fed56b9da072d, type: 3}
+    - {fileID: 5551588197682260465, guid: c7d6210fee095834aa8fed56b9da072d, type: 3}
+    variant: Handy Anne
+    tier: 1
+    hexcolor: 4F3279
+  - id: 6779
+    sprites:
+    - {fileID: 3197484580004668777, guid: 4ef7cd50ed49ae244be0e384a8d8ff73, type: 3}
+    - {fileID: 270401054156216933, guid: 4ef7cd50ed49ae244be0e384a8d8ff73, type: 3}
+    variant: Warm Anne
+    tier: 2
+    hexcolor: 324079
+  - id: 2000
+    sprites:
+    - {fileID: 21300000, guid: b0eda3180814aa24395afee41d3afa82, type: 3}
+    variant: ToraBlue
+    tier: 2
+    hexcolor: 0900FF
+  - id: 2000
+    sprites:
+    - {fileID: 21300000, guid: e26f66ea40242444089d6b594894903e, type: 3}
+    variant: ToraWhite
+    tier: 3
+    hexcolor: FFE5FE
+  - id: 2000
+    sprites:
+    - {fileID: 21300000, guid: c8159c2bd0e973e4b89adfd2a67f70bb, type: 3}
+    variant: ToraYellow
+    tier: 4
+    hexcolor: FFD600
+  - id: 777
+    sprites:
+    - {fileID: -3133613868843871658, guid: 6dd70fce690daf84593c45e8d112aded, type: 3}
+    - {fileID: 1887802241164603304, guid: 6dd70fce690daf84593c45e8d112aded, type: 3}
+    variant: Might Solid
+    tier: 1
+    hexcolor: AD8600
+  - id: 777
+    sprites:
+    - {fileID: -4341421511608629876, guid: bdd5d4d4697b3a444a97892d2bd6dc49, type: 3}
+    - {fileID: -1345468355201759043, guid: bdd5d4d4697b3a444a97892d2bd6dc49, type: 3}
+    variant: Might Barrier
+    tier: 1
+    hexcolor: 24B400
+  - id: 2002
+    sprites:
+    - {fileID: 7472673277068764474, guid: 1346ae405a510d04686f9e3564d0b00f, type: 3}
+    - {fileID: 5796806595533315403, guid: 1346ae405a510d04686f9e3564d0b00f, type: 3}
+    variant: DragRider
+    tier: 1
+    hexcolor: 2F2F2F
+  - id: 1
+    sprites:
+    - {fileID: 21300000, guid: 79520d0ef6fe6d145854b7315e595a2b, type: 3}
+    - {fileID: 21300000, guid: 79520d0ef6fe6d145854b7315e595a2b, type: 3}
+    variant: Base
+    tier: 1
+    hexcolor: 2F2F2F
+  mats:
+  - id: 1612
+    name: APMat
+    mat:
+    - {fileID: 6234176133674011997, guid: 466f27d9a23b50b4ca30584667874fda, type: 3}
+    - {fileID: -693409349, guid: 466f27d9a23b50b4ca30584667874fda, type: 3}
+    deck: {fileID: 21300000, guid: b25fc9b47a17df1499b13811524e5a81, type: 3}
+    sprite: {fileID: 21300000, guid: 2dd0c78c2a9e4b442bada3f35eb289ab, type: 3}
+    tier: 1
+    hexcolor: FFFFFF
+    desc: Basic stuff
+  - id: 4510
+    name: Grass
+    mat:
+    - {fileID: -1347532211411968617, guid: a4ee31606f84c5645bfccbfb0e969461, type: 3}
+    - {fileID: -991740146, guid: a4ee31606f84c5645bfccbfb0e969461, type: 3}
+    deck: {fileID: 21300000, guid: b25fc9b47a17df1499b13811524e5a81, type: 3}
+    sprite: {fileID: 21300000, guid: 9791fe29cb2f213439ebd776978ba5d7, type: 3}
+    tier: 2
+    hexcolor: 90c32a
+    desc: Grassy field, real basic alt. Man i need to touch grass.
+  avatars:
+  - id: 1
+    avatara: {fileID: 21300000, guid: b7d990a81f38d344a811f12d48121889, type: 3}
+  - id: 2
+    avatara: {fileID: 21300000, guid: 0844990029074a64c833935140500b55, type: 3}
+  - id: 3
+    avatara: {fileID: 21300000, guid: f5b7afe6acc8a2d41b1137369a58b787, type: 3}
+  - id: 4
+    avatara: {fileID: 21300000, guid: b836c8a939e9edb42a296efb18093d5f, type: 3}
+  - id: 5
+    avatara: {fileID: 21300000, guid: 9c00ce83d7966ab4d90873d0ba3688fc, type: 3}
