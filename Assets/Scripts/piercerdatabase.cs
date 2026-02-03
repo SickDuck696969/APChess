@@ -17,5 +17,6 @@ public class piercerdatabase : ScriptableObject
         roster.Add(new DragonKnight());
         roster.Add(new Ranger());
         roster.Add(new Avatar());
+        roster.Add(new Plasma());
     }
 }

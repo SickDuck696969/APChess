@@ -1,6 +1,9 @@
+using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.U2D.Animation;
 using UnityEngine.UI;
 
 public class capsem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
@@ -12,7 +15,7 @@ public class capsem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
     public SpriteRenderer spr;
     public SpriteData spriteData;
     public int a;
-
+    public Animator animator;
     private Camera cam;
     private RectTransform rectTransform;
     private Canvas canvas;
@@ -22,7 +25,7 @@ public class capsem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
     public Transform dragParent;
     public bool isdragged = false;
 
-    public Image spritedisplay;
+    public SpriteRenderer spritedisplay;
     public TMP_Text iddisplay;
     public TMP_Text namedisplay;
     public TMP_Text altdisplay;
@@ -119,6 +122,15 @@ public class capsem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
             if (Tooltip.Instance != null) Tooltip.Instance.Show(mat.name);
         }
     }
+    public IEnumerator PlayAnimationoverlay(Sprite effectsprite)
+    {
+        spritedisplay.GetComponent<Animator>().enabled = true;
+        spritedisplay.GetComponent<Animator>().Play("ActivateMotion", 0, 0f);
+        yield return new WaitForSeconds(spritedisplay.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length);
+        spritedisplay.GetComponent<Animator>().enabled = false;
+        spritedisplay.sprite = effectsprite;
+        spritedisplay.transform.GetChild(1).GetComponent<SpriteRenderer>().sprite = null;
+    }
     public void display()
     {
         foreach (visuals a in spriteData.spdt)
@@ -129,7 +141,23 @@ public class capsem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
                 altdisplay.color = HexToColor(a.hexcolor);
                 namedisplay.text = piecer.name;
                 iddisplay.text = "#" + piecer.ID.ToString();
-                spritedisplay.sprite = a.sprites[0];
+                spritedisplay.sprite = null;
+                if(a.librabry != null)
+                {
+                    spritedisplay.GetComponent<SpriteResolver>().SetCategoryAndLabel("Piercer", "New Label");
+                    spritedisplay.GetComponent<SpriteLibrary>().spriteLibraryAsset = a.librabry;
+                    spritedisplay.transform.GetChild(1).GetComponent<SpriteLibrary>().spriteLibraryAsset = a.librabry;
+                    StartCoroutine(PlayAnimationoverlay(a.sprites[0]));
+                    spritedisplay.GetComponentInChildren<Button>().onClick.RemoveAllListeners();
+                    spritedisplay.GetComponentInChildren<Button>().onClick.AddListener(() =>
+                    {
+                        StartCoroutine(PlayAnimationoverlay(a.sprites[0]));
+                    });
+                }
+                else
+                {
+                    spritedisplay.sprite = a.sprites[0];
+                }
                 movename.text = piecer.effect.name;
                 movedescript.text = piecer.effect.desc;
                 if(a.sprites.Length > 1)

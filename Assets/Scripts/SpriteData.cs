@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.U2D.Animation;
 [CreateAssetMenu(fileName = "SpriteData", menuName = "Scriptables/SpriteData")]
 public class SpriteData : ScriptableObject
 {
@@ -16,6 +17,7 @@ public class visuals
     public string variant;
     public int tier = 1;
     public string hexcolor = string.Empty;
+    public SpriteLibraryAsset librabry;
 }
 
 [System.Serializable]

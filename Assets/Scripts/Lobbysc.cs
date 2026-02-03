@@ -222,7 +222,7 @@ public class Lobbysc : NetworkBehaviour
         while (true)
         {
             _ = RefreshLobbyList();
-            yield return new WaitForSeconds(10f);
+            yield return new WaitForSeconds(3f);
         }
     }
 
@@ -269,8 +269,7 @@ public class Lobbysc : NetworkBehaviour
 
         foreach (var lobby in lobbies)
         {
-            if (!lobby.lobbyName.Contains(currentFilter, StringComparison.OrdinalIgnoreCase) || lobby.lobbyId == clientConnector.currentlobby.lobbyId || lobby.hostName == player.data.username)
-                continue;
+            
 
             currentdisplay.Add(lobby);
 

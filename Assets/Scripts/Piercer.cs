@@ -230,6 +230,35 @@ public class Ranger : Piecer
     }
 }
 
+public class Plasma : Piecer
+{
+    public Plasma()
+    {
+        ID = 110100;
+        name = "Plasma";
+        alt = "Inazuma Plasma";
+        tile = null;
+        LV = 5;
+        effect = new VoltageCharge(this);
+        xtramove = false;
+    }
+
+    public override Piecer Clone()
+    {
+        Debug.Log("Cloning: Plasma");
+
+        Plasma piece = new Plasma();
+
+        piece.ID = ID;
+        piece.name = name;
+        piece.alt = alt;
+        piece.LV = LV;
+        piece.xtramove = xtramove;
+
+        return piece;
+    }
+}
+
 public class Avatar : Piecer
 {
     public Avatar()

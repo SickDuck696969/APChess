@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrarySourceAsset
+  m_Library:
+  - m_Name: Piercer
+    m_Hash: 766903034
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: New Label
+      m_Hash: 259326342
+      m_Sprite: {fileID: 36983937388229467, guid: 90a5408236e815a488f094729f63570c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 36983937388229467, guid: 90a5408236e815a488f094729f63570c, type: 3}
+    - m_Name: New Label_0
+      m_Hash: 16589798
+      m_Sprite: {fileID: -3042181659106438256, guid: 90a5408236e815a488f094729f63570c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3042181659106438256, guid: 90a5408236e815a488f094729f63570c, type: 3}
+    - m_Name: New Label_1
+      m_Hash: 939135856
+      m_Sprite: {fileID: -4212196752617649059, guid: 90a5408236e815a488f094729f63570c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4212196752617649059, guid: 90a5408236e815a488f094729f63570c, type: 3}
+    - m_Name: New Label_2
+      m_Hash: 787694282
+      m_Sprite: {fileID: 3711794043806999778, guid: 90a5408236e815a488f094729f63570c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3711794043806999778, guid: 90a5408236e815a488f094729f63570c, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: Effect
+    m_Hash: 835491012
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: New Label
+      m_Hash: 259326342
+      m_Sprite: {fileID: -4673667727031295141, guid: 90a5408236e815a488f094729f63570c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4673667727031295141, guid: 90a5408236e815a488f094729f63570c, type: 3}
+    - m_Name: New Label_0
+      m_Hash: 16589798
+      m_Sprite: {fileID: -5996905245095479362, guid: 90a5408236e815a488f094729f63570c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5996905245095479362, guid: 90a5408236e815a488f094729f63570c, type: 3}
+    - m_Name: New Label_1
+      m_Hash: 939135856
+      m_Sprite: {fileID: -4535210778583765662, guid: 90a5408236e815a488f094729f63570c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4535210778583765662, guid: 90a5408236e815a488f094729f63570c, type: 3}
+    - m_Name: New Label_2
+      m_Hash: 787694282
+      m_Sprite: {fileID: 2043683739957579300, guid: 90a5408236e815a488f094729f63570c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2043683739957579300, guid: 90a5408236e815a488f094729f63570c, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: Ability
+    m_Hash: 980604832
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: New Label
+      m_Hash: 259326342
+      m_Sprite: {fileID: -1224421235, guid: 90a5408236e815a488f094729f63570c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1224421235, guid: 90a5408236e815a488f094729f63570c, type: 3}
+    - m_Name: New Label_0
+      m_Hash: 16589798
+      m_Sprite: {fileID: 1505894696, guid: 90a5408236e815a488f094729f63570c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1505894696, guid: 90a5408236e815a488f094729f63570c, type: 3}
+    - m_Name: New Label_1
+      m_Hash: 939135856
+      m_Sprite: {fileID: -1838465877, guid: 90a5408236e815a488f094729f63570c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1838465877, guid: 90a5408236e815a488f094729f63570c, type: 3}
+    - m_Name: New Label_2
+      m_Hash: 787694282
+      m_Sprite: {fileID: 2049469012, guid: 90a5408236e815a488f094729f63570c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2049469012, guid: 90a5408236e815a488f094729f63570c, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 639048699241566538
+  m_Version: 1

@@ -20,12 +20,14 @@ MonoBehaviour:
     variant: Choco-Slinger
     tier: 1
     hexcolor: 884400
+    librabry: {fileID: 0}
   - id: 9
     sprites:
     - {fileID: 61506194941554554, guid: 6510eea298820aa4893a69123eefe36a, type: 3}
     variant: Shinobi Verd
     tier: 1
     hexcolor: 06FF00
+    librabry: {fileID: 0}
   - id: 64
     sprites:
     - {fileID: 7694014812932834686, guid: 1824c0eaaafb1b74096a46f2e40ca764, type: 3}
@@ -33,6 +35,7 @@ MonoBehaviour:
     variant: Hocus Sister
     tier: 1
     hexcolor: C6FF00
+    librabry: {fileID: 0}
   - id: 64
     sprites:
     - {fileID: 4013205376322725647, guid: 5c4e2635adb2bfd49a3a55bb216de937, type: 3}
@@ -40,6 +43,7 @@ MonoBehaviour:
     variant: Strawberry Sister
     tier: 2
     hexcolor: FF0010
+    librabry: {fileID: 0}
   - id: 214
     sprites:
     - {fileID: -3414933714669718084, guid: 3c364fedcc603aa46a94866c1f3dcf02, type: 3}
@@ -47,6 +51,7 @@ MonoBehaviour:
     variant: Chocold-Slinger
     tier: 3
     hexcolor: 3D1B2F
+    librabry: {fileID: 0}
   - id: 214
     sprites:
     - {fileID: 4278136423740600300, guid: 8c1daeeeead5b604dab6258692d2a20c, type: 3}
@@ -54,6 +59,7 @@ MonoBehaviour:
     variant: Ruby Choco-Slinger
     tier: 2
     hexcolor: FF6EB9
+    librabry: {fileID: 0}
   - id: 6779
     sprites:
     - {fileID: -845045197500901298, guid: c7d6210fee095834aa8fed56b9da072d, type: 3}
@@ -61,6 +67,7 @@ MonoBehaviour:
     variant: Handy Anne
     tier: 1
     hexcolor: 4F3279
+    librabry: {fileID: 0}
   - id: 6779
     sprites:
     - {fileID: 3197484580004668777, guid: 4ef7cd50ed49ae244be0e384a8d8ff73, type: 3}
@@ -68,24 +75,28 @@ MonoBehaviour:
     variant: Warm Anne
     tier: 2
     hexcolor: 324079
+    librabry: {fileID: 0}
   - id: 2000
     sprites:
     - {fileID: 21300000, guid: b0eda3180814aa24395afee41d3afa82, type: 3}
     variant: ToraBlue
     tier: 2
     hexcolor: 0900FF
+    librabry: {fileID: 0}
   - id: 2000
     sprites:
     - {fileID: 21300000, guid: e26f66ea40242444089d6b594894903e, type: 3}
     variant: ToraWhite
     tier: 3
     hexcolor: FFE5FE
+    librabry: {fileID: 0}
   - id: 2000
     sprites:
     - {fileID: 21300000, guid: c8159c2bd0e973e4b89adfd2a67f70bb, type: 3}
     variant: ToraYellow
     tier: 4
     hexcolor: FFD600
+    librabry: {fileID: 0}
   - id: 777
     sprites:
     - {fileID: -3133613868843871658, guid: 6dd70fce690daf84593c45e8d112aded, type: 3}
@@ -93,6 +104,7 @@ MonoBehaviour:
     variant: Might Solid
     tier: 1
     hexcolor: AD8600
+    librabry: {fileID: 0}
   - id: 777
     sprites:
     - {fileID: -4341421511608629876, guid: bdd5d4d4697b3a444a97892d2bd6dc49, type: 3}
@@ -100,6 +112,7 @@ MonoBehaviour:
     variant: Might Barrier
     tier: 1
     hexcolor: 24B400
+    librabry: {fileID: 0}
   - id: 2002
     sprites:
     - {fileID: 7472673277068764474, guid: 1346ae405a510d04686f9e3564d0b00f, type: 3}
@@ -107,6 +120,7 @@ MonoBehaviour:
     variant: DragRider
     tier: 1
     hexcolor: 2F2F2F
+    librabry: {fileID: 0}
   - id: 1
     sprites:
     - {fileID: 21300000, guid: 79520d0ef6fe6d145854b7315e595a2b, type: 3}
@@ -114,6 +128,31 @@ MonoBehaviour:
     variant: Base
     tier: 1
     hexcolor: 2F2F2F
+    librabry: {fileID: 0}
+  - id: 110100
+    sprites:
+    - {fileID: -4212196752617649059, guid: 90a5408236e815a488f094729f63570c, type: 3}
+    - {fileID: -1838465877, guid: 90a5408236e815a488f094729f63570c, type: 3}
+    variant: Inazuma Plasma
+    tier: 1
+    hexcolor: ffde00
+    librabry: {fileID: 7108339969198208228, guid: 96fdf650f9e0a0b4681bc67cc8b895e7, type: 3}
+  - id: 110100
+    sprites:
+    - {fileID: 6452172910792625630, guid: 0c1f35b829ddbef4dbd3a6169d3021db, type: 3}
+    - {fileID: -461497670, guid: 0c1f35b829ddbef4dbd3a6169d3021db, type: 3}
+    variant: Inazuma Rider
+    tier: 2
+    hexcolor: ffcc00
+    librabry: {fileID: 7108339969198208228, guid: 558b2bc89fa5ee84681e4acb0f964605, type: 3}
+  - id: 110100
+    sprites:
+    - {fileID: -3224196330714536084, guid: 0d238b094090f194b8191db34446e216, type: 3}
+    - {fileID: 6153063502038293084, guid: 0d238b094090f194b8191db34446e216, type: 3}
+    variant: Inazuma Genshit
+    tier: 3
+    hexcolor: 9500ff
+    librabry: {fileID: 7108339969198208228, guid: e49547a92c51d204ab441957bcc82d4f, type: 3}
   mats:
   - id: 1612
     name: APMat

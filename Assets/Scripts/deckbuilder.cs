@@ -30,7 +30,7 @@ public class deckbuilder : MonoBehaviour, IDropHandler
     public GameObject Capsem;
     public GameObject MatPlate;
 
-    public Image spritedisplay;
+    public SpriteRenderer spritedisplay;
     public TMP_Text iddisplay;
     public TMP_Text namedisplay;
     public TMP_Text altdisplay;

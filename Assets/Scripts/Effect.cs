@@ -261,6 +261,33 @@ public class SoulBind : Effect
     }
 }
 
+public class VoltageCharge : Effect
+{
+    public VoltageCharge(Piecer caster)
+    {
+        ID = 1101001;
+        name = "Voltage Charge";
+        desc = "If Plasma has not moved this turn, it may activate to move in any empty square to where the path is not blocked. If Plasma has moved, activate the effect again from 1 to 3 times for higher voltage level. Higher voltage results in a longer cooldown.\n Voltage 1 - Disperse electricity to the tiles up, down, left, and right of Plasma.\n Voltage 2 - Disperse electricity to all adjacent tiles around Plasma.\n Voltage 3 - Fire a bolt of electricity to any targetable tile on the board, provided the path is not blocked by units.\n If the bolt hits an enemy Piercer, apply Inazuma.\n The affected unit is stunned for 1 turn.\r\n\r\nInazuma stacks up to 3 times.\r\n\r\nWhile stunned, the unit cannot move or use movement skills.\r\n\r\nWhen a unit reaches 3 Inazuma stacks, it becomes Marked. If Plasma has not moved this turn, it may activate to\r\nteleport to an empty tile adjacent to a Marked unit and capture it.";
+        type = "Active";
+        belong = "Plasma";
+        cooldown = 3;
+        this.caster = caster;
+        clip = Resources.Load<AnimationClip>("Images/Sprites/Cost 1/Ninja/SwiftMotion");
+        nature = "physical";
+    }
+    public override void action()
+    {
+        if (caster.tile.getsatus(1))
+        {
+            Debug.Log($"{caster.tile.pos[0]}, {caster.tile.pos[1]}");
+            caster.xtramove = true;
+            caster.tile.setstatus(0, true);
+            caster.tile.clip = clip;
+            end();
+        }
+    }
+}
+
 public class HolyWard : Effect
 {
     public HolyWard(Piecer caster)
